@@ -137,6 +137,7 @@ public class EmployeeDao {
 
             ps.close();
             DbUtil.getCon().close();
+            
         } catch (SQLException ex) {
             Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
         }

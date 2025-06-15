@@ -3,7 +3,7 @@
 <jsp:setProperty name="e" property="*" />
 
 <% 
- EmployeeDao.deleteEmployee(e.grtId())
+ EmployeeDao.deleteEmployee(e.getId());
      response.sendRedirect("index.jsp");
 
 

@@ -5,54 +5,35 @@
 
 
 <%@include file="header.jsp"%>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
-<h1>Hi Programmer</h1>
 
-<%
- List<Employee> list=EmployeeDao.getAllEmployees();
- request.setAttribute("list", list);
-
-%>
-
-<div class="container">
-
-
-
-    <h1 class="text-primary text-center">All Employee</h1> 
-
-    <table class="table table-striped">
-
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Designation</th>
-            </tr>
-        </thead>
-        <tbody>
-            <c:forEach items="${list}" var="e">
-                <tr>
-                    <td>${e.getId()}</td>
-                    <td>${e.getName()}</td>
-                    <td>${e.getDesignation()}</td>                  
-                    <td>
-                        <button type="submit" class="btn btn-primary">Edit</button>
-                        <button type="submit" class="btn btn-warning">Delete</button>
-                    </td>
-
-                </tr>
-
-            </c:forEach>
-
-        </tbody>
-    </table>
-
+<div class="container-fluid p-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 
 <%@include file="footer.jsp" %>
