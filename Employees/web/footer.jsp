@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <footer class="py-3 my-4 bg-info">
+  <footer class="py-3 my-4 " style="background-color: #CF9478">
     <ul class="nav justify-content-center">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>

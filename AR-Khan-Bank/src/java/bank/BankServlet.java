@@ -2,10 +2,12 @@ package bank;
 
 import model.Account;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 import java.util.HashMap;
 
+@WebServlet("/sub")
 public class BankServlet extends HttpServlet {
 
     private HashMap<Integer, Account> accounts = new HashMap<>();
@@ -19,7 +21,7 @@ public class BankServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("accounts", accounts);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/home.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -49,7 +51,7 @@ public class BankServlet extends HttpServlet {
 
         request.setAttribute("message", message);
         request.setAttribute("accounts", accounts);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/home.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
         dispatcher.forward(request, response);
     }
 }

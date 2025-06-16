@@ -11,7 +11,7 @@
 <%@include file="header.jsp" %>
 
 <div class="container my-3">
-    <div class="bg-success text-center">
+    <div class="text-center" style="background-color: #FFE082">
         <h1 class="jumborton">Update Employee</h1>
     </div>
 
