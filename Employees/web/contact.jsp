@@ -32,7 +32,7 @@
                         <strong>Business Hours:</strong><br>
                         <p>Success doesn&rsquo;t come from what you do occasionally, it comes from what you do consistently.</p>
 <br>
-                        We Are Open For You 24 hours a day and 7 days of week.
+                        We Are Open For You 24 hours a day and 7 days a week.
                     </li>
                 </ul>
             </div>
