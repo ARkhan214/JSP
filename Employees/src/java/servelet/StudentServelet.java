@@ -60,6 +60,8 @@ public class StudentServelet extends HttpServlet{
          
              Student s = StudentDao.getById(Integer.parseInt(request.getParameter("id")));
              request.setAttribute("stu", s);
+             
+             System.out.println(s);
              request.getRequestDispatcher("editStudent.jsp").forward(request, response);
              
          }

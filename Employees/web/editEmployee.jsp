@@ -6,7 +6,7 @@
         
         int result=EmployeeDao.updateEmployee(emp);
         if(result > 0){
-             response.sendRedirect("index.jsp");
+             response.sendRedirect("details.jsp");
     
             }
             else{

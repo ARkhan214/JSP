@@ -93,12 +93,13 @@ public class StudentDao {
 
         try {
             ps = DbUtil.getCon().prepareStatement(sql);
-
+            ps.setInt(1, id);                   
+            
             rs = ps.executeQuery();
 
             while (rs.next()) {
                 s = new Student(
-                        rs.getInt("id."),
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getFloat("fee")
                 );

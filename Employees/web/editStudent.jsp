@@ -2,12 +2,12 @@
 <%@include file="header.jsp" %>
 
 <%
-    Student s = (Student) request.getAttribute("students");
+    Student s = (Student) request.getAttribute("stu");
 %>
 
 <div class="container my-3">
     <div class="bg-info text-white text-center p-2 rounded">
-        <h2>Edit Employee</h2>
+        <h2>Edit Student</h2>
     </div>
 
     <form action="studentServlet" method="post">

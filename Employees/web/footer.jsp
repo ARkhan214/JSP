@@ -1,13 +1,13 @@
 <div class="container-fluid">
   <footer class="py-3 my-4 " style="background-color: #CF9478">
     <ul class="nav justify-content-center">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa-solid fa-house-chimney""></i></a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
     </ul>
-    <p class="text-center text-muted">© 2021 Company, Inc</p>
+      <p class="text-center" style="margin: 0;">&#169; 2025 A. Rahim Khan. All rights reserved.</p>
   </footer>
 </div>
 

@@ -1,9 +1,10 @@
 
 <%@include file="header.jsp" %>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <div class="container my-3">
     <div class="bg-success text-center">
-        <h1 class="jumborton">Add Stusent</h1>
+       
+        <h1 class="jumborton"><i class="fa-solid fa-graduation-cap"></i> Add Stusent</h1>
     </div>
     <!--    start form-->
     <form action="studentServlet"  method="post">

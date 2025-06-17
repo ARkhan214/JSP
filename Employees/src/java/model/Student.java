@@ -44,6 +44,11 @@ public class Student {
     public void setFee(float fee) {
         this.fee = fee;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", name=" + name + ", fee=" + fee + '}';
+    }
   
   
     
