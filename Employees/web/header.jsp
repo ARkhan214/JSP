@@ -31,6 +31,12 @@
         <li class="nav-item">
             <a class="nav-link" href="contact.jsp">Contact</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="allStudent.jsp">All Student</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="addStudent.jsp">Add Student</a>
+        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
