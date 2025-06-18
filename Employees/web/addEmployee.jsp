@@ -5,7 +5,7 @@
 <% 
     int result = EmployeeDao.saveAllEmployees(e);
     if(result > 0){
-    response.sendRedirect("success.jsp");
+    response.sendRedirect("success.jsp");   
     }
     else{
     response.sendRedirect("error.jsp");

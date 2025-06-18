@@ -28,7 +28,7 @@ CREATE TABLE `employee` (
   `designation` varchar(45) NOT NULL,
   `salary` float(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'MD RAHIM KHAN','Md',1000000.00),(3,'Emran Mia','Junior Software Engineer',25000.00),(4,'Masud Khan','Junior Engineer',50000.00),(5,'Eiasin Prodhan ','Software Engineer',45000.00),(6,'Robin Milford','Cleaner',20000.00);
+INSERT INTO `employee` VALUES (1,'MD RAHIM KHAN','Md',1000000.00),(4,'Masud Khan','Junior Engineer',50000.00),(5,'Eiasin Prodhan ','Software Engineer',45000.00),(6,'Robin Milford','Cleaner',20000.00),(7,'Miss Mariam','CEO',2000000.00),(10,'Abdur Rahim','Software Engineer',45000.00),(11,'Toha','Cleaner',45000.00),(12,'karimul','cm',10000.00),(13,'Robiul','GM',60000.00),(14,'fahim','CEO',45000.00),(15,'Jaker','Software Engineer',50000.00),(16,'Labu','g',0.00),(17,'faruk','cm',45000.00),(18,'Sohad','Sweeper',45000.00),(19,'Sohad','Sweeper',45000.00),(20,'Abdur Rahim','cm',0.00),(21,'Abdur Rahim','Software Engineer',50000.00);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,10 +51,9 @@ DROP TABLE IF EXISTS `students`;
 CREATE TABLE `students` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
-  `email` varchar(45) DEFAULT NULL,
-  `address` varchar(45) DEFAULT NULL,
+  `fee` float(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,6 +62,7 @@ CREATE TABLE `students` (
 
 LOCK TABLES `students` WRITE;
 /*!40000 ALTER TABLE `students` DISABLE KEYS */;
+INSERT INTO `students` VALUES (2,'Masud',450.00),(4,'Sadier Rahman',450.00),(6,'Md Rahim khan ',600.00),(7,'Reja Khan',420.00),(8,'Imran',500.00);
 /*!40000 ALTER TABLE `students` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -75,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-16  2:42:09
+-- Dump completed on 2025-06-18 10:16:27
