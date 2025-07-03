@@ -34,9 +34,9 @@
         <li class="nav-item">
             <a class="nav-link" href="addStudent.jsp">Add Student<i class="fa-solid fa-graduation-cap" style="margin: 5px"></i> </a>
         </li>-->
-         <li class="nav-item">
+<!--         <li class="nav-item">
             <a class="nav-link" href="contact.jsp">Contact<i class="fa-solid fa-phone" style="margin: 5px"></i></a>
-        </li>
+        </li>-->
       </ul>
 <!--      <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
